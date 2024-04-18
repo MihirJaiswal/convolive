@@ -30,7 +30,7 @@ function MobileNav() {
         className='cursor-pointer sm:hidden' 
         />
       </SheetTrigger>
-        <SheetContent side='right' className='bg-dark-1 border-none'>
+        <SheetContent side='right' className='bg-black border-gray-700'>
             
      <Link href='/' className='flex items-center gap-1'>
      <Image
