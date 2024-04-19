@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import MobileNav from './MobileNav'
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 function Navbar() {
 
@@ -23,6 +24,10 @@ function Navbar() {
      </Link>
 
       <div className='flex-between gap-5'>
+        <SignedIn>
+          <UserButton/>
+        </SignedIn>
+
          <MobileNav/>
       </div>
 

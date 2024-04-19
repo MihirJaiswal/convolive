@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import { Variable } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ClerkProvider
+      appearance={{
+        variables: {
+          colorText: "#fff",
+          colorPrimary: "#830EF9",
+          colorBackground: "#000000",
+          colorInputBackground: "#1c1f2e",
+          colorInputText: "#fff",
+        }
+      }}
+      >
       <body className={`${inter.className} bg-gray-900`}>{children}</body>
+      </ClerkProvider>
+     
     </html>
   );
 }
