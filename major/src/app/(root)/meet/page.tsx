@@ -24,12 +24,10 @@ function Home() {
 </div>
     </div>
         </div> 
-   
-        <div className='mt-4'>
+
+        <div>
           <MeetingTypeList/>
-        </div>
-        
-          
+        </div>   
 
       </section>
   )

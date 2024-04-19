@@ -18,7 +18,7 @@ import { sidebarLinks } from '../../constant'
 function MobileNav() {
     const pathname = usePathname();
   return (
-    <section className='w-full max-w-[264px]'>
+    <section className='w-full max-w-[264px] z-50'>
 <div className='flex flex-col md:hidden'>
     <Sheet>
       <SheetTrigger asChild>
