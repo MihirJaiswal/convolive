@@ -2,14 +2,18 @@
 import React, { useState } from 'react'
 import { HomeCard } from './HomeCard'
 import { useRouter } from 'next/navigation'
+import { MeetingModal } from './MeetingModal'
 
 
 
 export const MeetingTypeList = () => {
   const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>()
   const router = useRouter()
+
+  const createMeeting = () => {}
   return (
-    <div className='mt-4 flex flex-col md:flex-row items-center gap-2 justify-between z-10'>
+    <section>
+    <div className='mt-4 flex flex-col md:flex-row items-center gap-2 justify-between ' style={{zIndex: 9999}}>
       <HomeCard
           img="/icons/add-meeting.svg"
           title="New Meeting"
@@ -34,7 +38,16 @@ export const MeetingTypeList = () => {
           description="Check your recordings"
           handleClick = {() => router.push('/meet/recordings')}
           />
-         
+        
     </div>
+    <MeetingModal 
+    isOpen={meetingState === 'isInstantMeeting'} 
+    onClose={() => setMeetingState(undefined)} 
+    title="Start a new Meeting"
+    className="text-center" 
+    buttonText="Start Meeting"
+    handleClick={createMeeting} 
+    />
+    </section>
   )
 }

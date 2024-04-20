@@ -12,7 +12,7 @@ interface HomeCardProps {
 
 export function HomeCard({ img, title, description, handleClick }: HomeCardProps) {
   return (
-    <div className="flex" onClick={handleClick}>
+    <div className="flex z-10" onClick={handleClick}>
       <PinContainer title={title} href="/">
         <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-60 h-60 md:w-48 md:h-48">
           <div className="h-full relative w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
