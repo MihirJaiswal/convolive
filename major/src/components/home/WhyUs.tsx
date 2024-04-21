@@ -3,7 +3,7 @@ import LampBg from "./lampbg"
 
 const WhyUs = () => {
   return (
-    <section className='bg-revb'>
+    <section className='bg-revb -mt-10 md:-mt-20'>
         <LampBg/>
         <Feature/>
     </section>

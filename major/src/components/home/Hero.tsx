@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <Section
-        className="pt-[12rem] -mt-[5.3rem] md:pt-[13rem] md:-mt-[6.5rem] lg:pt-[14rem] lg:-mt-[7.5rem] xl:pt-[15rem] xl:-mt-[8.5rem] 2xl:pt-[16rem] 2xl:-mt-[9.5rem]"
+        className="pt-[12rem] -mt-[5.3rem] md:pt-[13rem] md:-mt-[6.5rem] lg:pt-[14rem] lg:-mt-[7.5rem] xl:pt-[15rem] xl:-mt-[8.5rem] 2xl:pt-[16rem] 2xl:-mt-[9.5rem] bg-mainb"
         crosses
         crossesOffset="lg:translate-y-[5.25rem]"
         customPaddings="lg:py-0"

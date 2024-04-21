@@ -3,8 +3,8 @@ import HomeHeader from "@/components/home/HomeHeader";
 import Hero from "@/components/home/Hero";
 import WhyUs from "@/components/home/WhyUs";
 import Footer from "@/components/home/Footer";
-import PricingList from "@/components/home/PricingList";
 import Feature2 from "@/components/home/Feature2";
+import Collaboration from "@/components/home/Collaboration";
 
 export default function Home() {
   return (
@@ -12,9 +12,9 @@ export default function Home() {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <HomeHeader/>
         <Hero/>
+        <Collaboration/>
         <WhyUs/>
-        <Feature2/>
-       {/*  <PricingList/> */}
+        <Feature2/> 
         <Footer/>
       </div>
       <ButtonGradient/>
