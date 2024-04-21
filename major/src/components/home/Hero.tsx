@@ -20,7 +20,7 @@ import d from '../../../public/hero/curve.png'
 
 const Hero = () => {
     const parallaxRef = React.useRef(null)
-    const [BackgroundImage, setBackgroundImage] = useState<any>(robot);
+    const [BackgroundImage, setBackgroundImage] = useState<any>("https://images.unsplash.com/photo-1586985564150-11ee04838034?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
     const handleVideoConferenceHover = () => {
         setBackgroundImage(a);

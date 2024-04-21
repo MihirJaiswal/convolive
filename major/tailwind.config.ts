@@ -153,7 +153,8 @@ const config = {
         "feat": "linear-gradient(to bottom, #030619, #080315, #0b020f, #0a0009, #070004, #090206, #0a0408, #0c060a, #110b12, #140f18, #14141f, #111825)",
         "ltob": "linear-gradient(to bottom, #111825, #14121d, #130c14, #0c060a, #000000);",
         "btopb":"linear-gradient(to bottom, #0f0e16, #0d0c17, #0b0b18, #070919, #04071a);",
-        "bg3lg": "linear-gradient(to bottom, #020617, #050919, #080d1c, #0b101e, #0d1221, #050919, #020617);"
+        "bg3lg": "linear-gradient(to bottom, #020617, #0b101e, #0d1221, #050919, #020617);",
+        "bg3blb": "linear-gradient(to bottom, #010101, #11131f, #12131f, #14121e, #15121e, #140d17, #110910, #0b0407, #000000);"
       },
       keyframes: {
         shimmer: {
