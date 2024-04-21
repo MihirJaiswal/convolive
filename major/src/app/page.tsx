@@ -2,6 +2,9 @@ import ButtonGradient from "../../public/svg/ButtonGradient";
 import HomeHeader from "@/components/home/HomeHeader";
 import Hero from "@/components/home/Hero";
 import WhyUs from "@/components/home/WhyUs";
+import Footer from "@/components/home/Footer";
+import PricingList from "@/components/home/PricingList";
+import Feature2 from "@/components/home/Feature2";
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
         <HomeHeader/>
         <Hero/>
         <WhyUs/>
+        <Feature2/>
+       {/*  <PricingList/> */}
+        <Footer/>
       </div>
       <ButtonGradient/>
     </>

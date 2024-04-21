@@ -39,7 +39,13 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
+
+  addBase({
+    ":root": newVars,
+  });
 }
+
+
 
 const config = {
   darkMode: ["class"],
@@ -142,8 +148,10 @@ const config = {
         hero: "url('/images/hero-background.png\')",
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient": "conic-gradient(from 225deg, #A100FFFF, #591B64, #AC6AFF)",
-        "mainb":  "linear-gradient(to bottom, #111827, #15121e, #140c15, #0d060a, #000000)",
-        "revb":   "linear-gradient(to bottom, #000000, #0d060a, #140c15, #15121e, #111827)"
+        "mainb": "linear-gradient(to bottom, #111827, #0f1523, #0c111f, #070c1b, #020617);",
+        "revb":  "linear-gradient(to bottom, #000000, #0d060a, #140c15, #15121e, #111827)",
+        "feat": "linear-gradient(to bottom, #030619, #080315, #0b020f, #0a0009, #070004, #090206, #0a0408, #0c060a, #110b12, #140f18, #14141f, #111825)",
+        "ltob": "linear-gradient(to bottom, #111825, #14121d, #130c14, #0c060a, #000000);"
       },
       keyframes: {
         shimmer: {
