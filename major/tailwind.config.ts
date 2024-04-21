@@ -142,7 +142,8 @@ const config = {
         hero: "url('/images/hero-background.png\')",
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient": "conic-gradient(from 225deg, #A100FFFF, #591B64, #AC6AFF)",
-        "mainb":  "linear-gradient(to bottom, #111827, #15121e, #140c15, #0d060a, #000000)"
+        "mainb":  "linear-gradient(to bottom, #111827, #15121e, #140c15, #0d060a, #000000)",
+        "revb":   "linear-gradient(to bottom, #000000, #0d060a, #140c15, #15121e, #111827)"
       },
       keyframes: {
         shimmer: {
