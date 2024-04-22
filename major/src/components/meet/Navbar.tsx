@@ -11,7 +11,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className='flex flex-between fixed z-50 w-full bg-black px-6 py-4 lg:px-10 border-b border-gray-700'>
+    <nav className='flex flex-between fixed z-50 w-full bg-n-8/90 px-6 py-4 lg:px-10 border-b border-gray-700'>
      <Link href='/' className='flex items-center gap-1'>
      <Image
       src='/icons/logo.svg'
