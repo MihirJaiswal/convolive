@@ -1,5 +1,5 @@
-import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
+import Navbar from '@/components/meet/Navbar'
+import Sidebar from '@/components/meet/Sidebar'
 import React, { ReactNode } from 'react'
 
 function RootLayout({children} : {children : ReactNode}) {
