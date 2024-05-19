@@ -16,6 +16,7 @@ const HomeHeader = () => {
             src='/brainwave-symbol.svg'
             width={52}
             height={42}
+            loading='lazy'
             className='max-sm:size-10 m-2'
             />
             <p className='text-n-1 font-bold text-2xl max-lg:hidden uppercase'>ConvoLive</p>

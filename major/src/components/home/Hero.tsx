@@ -2,8 +2,6 @@
 import React from 'react'
 import Section from './Section'
 import Image from 'next/image'
-import curve from '../../../public/hero/curve.png'
-import robot from '../../../public/hero/robot.jpg'
 import heroBackground from '../../../public/hero/hero-background.jpg'
 import { ScrollParallax } from "react-just-parallax"
 import { BackgroundCircles, BottomLine, Gradient } from "./hero1";
@@ -12,43 +10,43 @@ import Notification from './Notification'
 import { heroIcons } from '../../../constant'
 import { useState } from 'react'
 import { notification1 } from "../../../public";
-
-import a from '../../../public/hero/curve.png'
-import b from '../../../public/hero/curve.png'
-import c from '../../../public/hero/curve.png'
-import d from '../../../public/hero/curve.png'
+import mainImg from "../../../public/services/home.png"
+import a from '../../../public/services/video.png'
+import b from '../../../public/services/stream.jpg'
+import c from '../../../public/services/events.jpg'
+import d from '../../../public/services/VR.jpg'
 
 const Hero = () => {
     const parallaxRef = React.useRef(null)
-    const [BackgroundImage, setBackgroundImage] = useState<any>("https://images.unsplash.com/photo-1586985564150-11ee04838034?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    const [BackgroundImage, setBackgroundImage] = useState<any>(mainImg);
 
     const handleVideoConferenceHover = () => {
         setBackgroundImage(a);
     };
 
     const handleVideoConferenceLeave = () => {
-        setBackgroundImage(robot);
+        
     };
     const handleLiveStreamHover = () => {
         setBackgroundImage(b);
     };
 
     const handleLiveStreamLeave = () => {
-        setBackgroundImage(robot);
+       
     };
     const handleEventsHover = () => {
         setBackgroundImage(c);
     };
 
     const handleEventsLeave = () => {
-        setBackgroundImage(robot);
+       
     };
     const handleVrHover = () => {
         setBackgroundImage(d);
     };
 
     const handleVrLeave = () => {
-        setBackgroundImage(robot);
+        
     };
 
   return (
@@ -93,21 +91,28 @@ const Hero = () => {
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                <Image
                   src={BackgroundImage}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                  className="w-full scale-[2.4] translate-y-[45%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[0%]"
                   width={1024}
                   height={490}
                   alt="AI"
+                  quality={100}
+                  loading='lazy'
                 /> 
 
  
                 <ScrollParallax isAbsolutelyPositioned>
-                <ul className='mt-6'>
+               {/*  <ul className='mt-6'>
                   {heroIcons.map((icon, index) => (
                       <li className="p-3" key={index}>
-                          <Image src={icon} width={24} height={25} alt={`icon-${index}`} />
+                          <Image 
+                          src={icon} 
+                          width={24} 
+                          height={25} 
+                          loading='lazy'
+                          alt={`icon-${index}`} />
                       </li>
                   ))}
-                </ul>
+                </ul> */}
                 </ScrollParallax>
 
                 <ScrollParallax  isAbsolutelyPositioned>
@@ -153,6 +158,7 @@ const Hero = () => {
               width={1440}
               height={1800}
               alt="hero"
+              loading='lazy'
             />
           </div>
 

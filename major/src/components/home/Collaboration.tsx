@@ -81,7 +81,8 @@ const Collaboration = () => {
                     src={brainwaveSymbol}
                     width={48}
                     height={48}
-                    alt="brainwave"
+                    loading="lazy"
+                    alt="convolive"
                   />
                 </div>
               </div>
@@ -109,6 +110,7 @@ const Collaboration = () => {
                       height={app.height}
                       alt={app.title}
                       src={app.icon}
+                      loading="lazy"
                     />
                   </div>
                 </motion.li>

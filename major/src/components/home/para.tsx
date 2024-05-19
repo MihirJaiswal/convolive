@@ -68,6 +68,7 @@ const Para: React.FC<ParaProps> = ({ content }) => {
                       alt="blog thumbnail"
                       height="350"
                       width="350"
+                      loading="lazy"
                       className="rounded-lg mb-10 object-cover"
                     />
                   </motion.div>

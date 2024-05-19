@@ -19,7 +19,12 @@ const Footer = () => {
               target="_blank"
               className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full transition-colors hover:bg-n-6"
             >
-              <Image src={item.iconUrl} width={16} height={16} alt={item.title} />
+              <Image 
+              src={item.iconUrl} 
+              width={16} 
+              height={16} 
+              loading="lazy"
+              alt={item.title} />
             </a>
           ))}
         </ul>

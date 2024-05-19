@@ -4,7 +4,6 @@ import Para from './para';
 import { HeroScrollDemo } from './scroll';
 
 const Feature = () => {
-  // Define your content items
   const contentItems = [
     {
       title: 'Video Confrencing',

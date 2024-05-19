@@ -25,6 +25,7 @@ function HomeMobileNav() {
         width={36}
         height={36}
         alt="hamburger"
+        loading='lazy'
         className='cursor-pointer sm:hidden' 
         />
       </SheetTrigger>
@@ -36,6 +37,7 @@ function HomeMobileNav() {
       width={42}
       height={42}
       alt='logo'
+      loading='lazy'
       className='max-sm:size-10'
       />
       <p className='text-[21px] font-bold text-white px-2 mt-1'>ConvoLive</p>

@@ -26,7 +26,7 @@ export function HeroScrollDemo() {
           width={500}
           className="rounded-2xl object-cover h-full object-left-top"
           draggable={false}
-          priority
+          loading="lazy"
         />
       </ContainerScroll>
     </div>

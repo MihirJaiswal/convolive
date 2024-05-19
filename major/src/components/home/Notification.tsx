@@ -15,6 +15,7 @@ const Notification = ({ className, title, image, onMouseEnter, onMouseLeave }: a
         width={62}
         height={62}
         alt="image"
+        loading="lazy"
         className="rounded-xl"
       />
 

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import { Button } from '../ui/button';
+import img from '../../../public/Untitled_design__8_-removebg.png'
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
             <h1 className="font-semibold text-gray-100 text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px]">
               Host, Connect, Celebrate: Your Events, Our Platform!
             </h1>
-            <p className="leading-[30px] tracking-[2%] md:font-normal text-[20px] leading-[36px] text-gray-400">
+            <p className="tracking-[2%] md:font-normal text-[20px] leading-[36px] text-gray-400">
               Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.
             </p>
             <motion.button // Wrap with motion.button for animation
@@ -35,10 +36,11 @@ const Hero = () => {
           </motion.div>
 
           <Image
-            src="/assets/images/hero.png"
+            src={img}
             alt="hero"
             width={1000}
             height={1000}
+            loading='lazy'
             className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
           />
         </div>
@@ -50,10 +52,15 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.5  }} // Animation duration
         className="flex flex-col justify-center gap-8"
      >
-        <section id="events" className="max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full my-8 flex flex-col gap-8 md:gap-12">
-            <h2 className="font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px]">
+        <section id="events" className="max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full flex flex-col gap-8 md:gap-12 -mt-10">
+            <h2 className="font-bold text-[25px] leading-[40px] lg:text-[28px] lg:leading-[44px] xl:text-[30px] xl:leading-[48px]">
             Trust by <br /> Thousands of Events
             </h2>
+
+            <div className='...'>
+              search
+              category filter
+            </div>
         </section>
      </motion.div>
     </div>
