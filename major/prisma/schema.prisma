@@ -14,11 +14,42 @@ datasource db {
 }
 
 model User {
-  username String @id @map("_id")
-  imageUrl String
-  externalUserId String @unique
-  bio String?
+  id             String    @id @default(uuid()) @map("_id")
+  username       String    @unique
+  imageUrl       String?   @map(name: "imageUrl") @db.String
+  externalUserId String    @unique
+  bio            String?   @map(name: "bio") @db.String
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model Event {
+  id            Int        @id @map("_id")
+  title         String
+  description   String?
+  location      String?
+  createdAt     DateTime    @default(now())
+  imageUrl      String
+  startDateTime DateTime    @default(now())
+  endDateTime   DateTime    @default(now())
+  price         String?
+  isFree        Boolean     @default(false)
+  url           String?
+  category      Category    @relation(fields: [categoryId], references: [id])
+  categoryId    Int
+  organizer     User        @relation(fields: [organizerId], references: [id])
+  organizerId   Int
+}
+
+model Category {
+  id    Int      @id @map("_id")
+  name  String
+  events Event[]
+}
+
+model User1 {
+  id        Int      @id @map("_id")
+  firstName String
+  lastName  String
+  events    Event[]   @relation(fields: [id], references: [organizerId])
 }

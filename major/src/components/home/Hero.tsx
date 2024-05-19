@@ -62,9 +62,9 @@ const Hero = () => {
     <div className='max-w-[77.5rem] h-max mx-auto px-4 md:px-10 lg:px-15 xl:max-w-[87.5rem] relative ' ref={parallaxRef}>        
   <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6 font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
+            Experience the quality of&nbsp;Virtual Meet and&nbsp;events with {` `}
             <span className="inline-block relative">
-              Brainwave
+              Convolive
               {/* <Image
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -75,8 +75,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 mt-2">
-            Unleash the power of AI within Brainwave. Upgrade your productivity
-            with Brainwave, the open AI chat app.
+            Unleash the power of seamless stream and virtual events. Upgrade your productivity
+            with Convolive.
           </p>
           <button className="relative inline-flex h-12 w-40 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -101,13 +101,13 @@ const Hero = () => {
 
  
                 <ScrollParallax isAbsolutelyPositioned>
-                    {heroIcons.map((icon, index) => (
-                        <ul className='mt-6'>
-                            <li className="p-3 " key={index}>
-                            <Image src={icon} width={24} height={25} alt={icon} />
-                        </li>
-                        </ul>
-                    ))}
+                <ul className='mt-6'>
+                  {heroIcons.map((icon, index) => (
+                      <li className="p-3" key={index}>
+                          <Image src={icon} width={24} height={25} alt={`icon-${index}`} />
+                      </li>
+                  ))}
+                </ul>
                 </ScrollParallax>
 
                 <ScrollParallax  isAbsolutelyPositioned>

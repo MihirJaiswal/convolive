@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss"
-
-
+import { withUt } from 'uploadthing/tw'
 
   function addSvgPatterns({ matchUtilities, theme }: any) {
     matchUtilities(
@@ -44,7 +43,6 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
-
 
 
 const config = {
