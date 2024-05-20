@@ -116,20 +116,27 @@ const Hero = () => {
                 </ScrollParallax>
 
                 <ScrollParallax  isAbsolutelyPositioned>
-                
-                 <Notification
-                    className="hidden absolute -right-24 -top-4 w-[18rem] xl:flex "
-                    title="Video Conference"
+                <Notification
+                    className="hidden absolute -left-24 bottom-20 w-[18rem] xl:flex "
+                    title="VR"
                     image={notification1}
-                    onMouseEnter={handleVideoConferenceHover}
-                    onMouseLeave={handleVideoConferenceLeave}
+                    onMouseEnter={handleVrHover}
+                    onMouseLeave={handleVrLeave}
                   />
+                
                   <Notification
                     className="hidden absolute -left-24 -top-4 w-[18rem] xl:flex "
                     title="Live Streaming"
                     image={notification1}
                     onMouseEnter={handleLiveStreamHover}
                     onMouseLeave={handleLiveStreamLeave}
+                  />
+                   <Notification
+                    className="hidden absolute -right-24 -top-4 w-[18rem] xl:flex "
+                    title="Video Conference"
+                    image={notification1}
+                    onMouseEnter={handleVideoConferenceHover}
+                    onMouseLeave={handleVideoConferenceLeave}
                   />
                   <Notification
                     className="hidden absolute -right-24 bottom-20 w-[18rem] xl:flex "
@@ -138,13 +145,7 @@ const Hero = () => {
                     onMouseEnter={handleEventsHover}
                     onMouseLeave={handleEventsLeave}
                   />
-                  <Notification
-                    className="hidden absolute -left-24 bottom-20 w-[18rem] xl:flex "
-                    title="VR"
-                    image={notification1}
-                    onMouseEnter={handleVrHover}
-                    onMouseLeave={handleVrLeave}
-                  />
+                  
                 </ScrollParallax>
               </div>
             </div>
@@ -173,4 +174,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero 
