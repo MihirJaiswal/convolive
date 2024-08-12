@@ -1,8 +1,16 @@
 import React from 'react';
+import Section from './Section';
 
 const Help = () => {
   return (
-    <section className="mt-24">
+    <Section crosses className="bg-bg3lg">
+      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+        <img
+          src="/footer-grid.svg"
+          alt="grid"
+          className="w-full h-full opacity-50 "
+        />
+      </div>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col items-center justify-center">
         <h1 className="mb-6 font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]">We invest in the world’s potential</h1>
         <p className="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-300">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
@@ -17,7 +25,7 @@ const Help = () => {
          
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import HomeNav from './HomeNav'
 import HomeMobileNav from './HomeMobileNav'
+import img from '../../../public/brainwave-symbol.svg'
 
 const HomeHeader = () => {
   return (
@@ -10,7 +11,7 @@ const HomeHeader = () => {
         <a href="#hero" className='flex items-center w-[12rem] xl:mr-8'>
             <Image
             alt='logo'
-            src='/brainwave-symbol.svg'
+            src={img}
             width={52}
             height={42}
             loading='lazy'

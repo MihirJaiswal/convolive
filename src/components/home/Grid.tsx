@@ -1,10 +1,12 @@
 import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
+import Section from "./Section";
 
 const Grid = () => {
   return (
-    <div
+    <Section crosses className="bg-bg3lg">
+      <div
       id="about">
-      <BentoGrid className="w-full py-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <BentoGrid className="md:px-24 px-4">
         
         <BentoGridItem
           id={1}
@@ -73,6 +75,7 @@ const Grid = () => {
         />
       </BentoGrid>
     </div>
+    </Section>
   );
 };
 

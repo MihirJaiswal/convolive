@@ -11,6 +11,7 @@ import Link from 'next/link'
 import{ usePathname } from 'next/navigation'
 import{ cn } from '../../utils/cn'
 import{ navigation } from '../../../constant/index'
+import img from '../../../public/brainwave-symbol.svg'
   
 
 function HomeMobileNav() {
@@ -33,7 +34,7 @@ function HomeMobileNav() {
             
      <Link href='/' className='flex items-center gap-1'>
      <Image
-      src='/brainwave-symbol.svg'
+      src={img}
       width={42}
       height={42}
       alt='logo'

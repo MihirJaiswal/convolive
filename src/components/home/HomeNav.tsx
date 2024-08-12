@@ -37,17 +37,9 @@ function HomeNav() {
                 {item.title}
               </a>
             ))}
-            
           </div>
-
-        
         </nav>
-       
-
-       
-          
-      </div>
-    
+      </div> 
   )
 }
 

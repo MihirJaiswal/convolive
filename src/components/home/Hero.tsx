@@ -1,17 +1,14 @@
-'use client'
 import React from 'react'
 import Section from './Section'
 import Image from 'next/image'
 import heroBackground from '../../../public/hero/hero-background.jpg'
-import { ScrollParallax } from "react-just-parallax"
+import Scroll from './Scroll'
 import { BackgroundCircles, BottomLine, Gradient } from "./hero1";
 import CompanyLogos from "./CompanyLogos";
-import Notification from './Notification'
-import { notification1 } from "../../../public";
 import img from '../../../public/background.jpg'
 
 const Hero = () => {
-    const parallaxRef = React.useRef(null)
+    
   return (
     <Section
         className="pt-[12rem] -mt-[5.3rem] md:pt-[13rem] md:-mt-[6.5rem] lg:pt-[14rem] lg:-mt-[7.5rem] xl:pt-[15rem] xl:-mt-[8.5rem] 2xl:pt-[16rem] 2xl:-mt-[9.5rem] bg-mainb"
@@ -20,7 +17,7 @@ const Hero = () => {
         customPaddings="lg:py-0"
         id="hero"
      >
-    <div className='max-w-[77.5rem] h-max mx-auto px-4 md:px-10 lg:px-15 xl:max-w-[87.5rem] relative ' ref={parallaxRef}>        
+    <div className='max-w-[77.5rem] h-max mx-auto px-4 md:px-10 lg:px-15 xl:max-w-[87.5rem] relative '>        
   <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6 font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]">
             Experience the quality of&nbsp;Virtual Meet and&nbsp;events with {` `}
@@ -52,32 +49,10 @@ const Hero = () => {
                   height={490}
                   alt="AI"
                   quality={100}
+                  placeholder='blur'
                   loading='lazy'
                 />
-                <ScrollParallax  isAbsolutelyPositioned>
-                <Notification
-                    className="hidden absolute -left-24 bottom-20 w-[18rem] xl:flex "
-                    title="VR"
-                    image={notification1}
-                  />
-                
-                  <Notification
-                    className="hidden absolute -left-24 -top-4 w-[18rem] xl:flex "
-                    title="Live Streaming"
-                    image={notification1}
-                  />
-                   <Notification
-                    className="hidden absolute -right-24 -top-4 w-[18rem] xl:flex "
-                    title="Video Conference"
-                    image={notification1}
-                  />
-                  <Notification
-                    className="hidden absolute -right-24 bottom-20 w-[18rem] xl:flex "
-                    title="Events Hosting"
-                    image={notification1}
-                  />
-                  
-                </ScrollParallax>
+                <Scroll/>
               </div>
             </div>
             <Gradient />

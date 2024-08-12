@@ -17,6 +17,7 @@ const Notification = ({ className, title, image, onMouseEnter, onMouseLeave }: a
         alt="image"
         loading="lazy"
         className="rounded-xl"
+        placeholder="blur"
       />
 
       <div className="flex-1">
@@ -34,7 +35,9 @@ const Notification = ({ className, title, image, onMouseEnter, onMouseLeave }: a
                   className="w-full"
                   width={20}
                   height={20}
-                  alt='niggA'
+                  alt='notification'
+                  loading="lazy"
+                  placeholder="blur"
                 />
               </li>
             ))}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10 mt-20">
+    <Section crosses className="!px-0 !py-10 ">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-sm text-n-4 lg:block">
           © {new Date().getFullYear()}. All rights reserved.

@@ -1,5 +1,4 @@
 import SectionSvg from "../../../public/svg/SectionSvg";
-
 interface SectionProps {
     className?: string;
     id?: string;
